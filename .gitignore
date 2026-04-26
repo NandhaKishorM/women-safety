@@ -1,3 +1,6 @@
 opencode.txt
 paper/
 model/
+pub/
+.claude/
+
