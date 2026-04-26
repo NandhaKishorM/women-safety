@@ -189,7 +189,7 @@ def fig_pipeline():
         ("Feature\nextractor", "14 dims",  "#cdd9e5"),
         ("SmolLM2-135M",  "Q4_K_M GGUF",   "#fde4c7"),
         ("Trigger",       "engine",        "#fde4c7"),
-        ("Buzzer + GSM",  "alert",         "#f8c8c0"),
+        ("Buzzer, GPS\n+ GSM", "loc alert",      "#f8c8c0"),
     ]
     n = len(boxes)
     box_w = 1.6
