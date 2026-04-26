@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python code/generate_dataset.py)",
+      "Bash(python evaluate.py)",
+      "Bash(python *)",
+      "WebSearch"
+    ]
+  }
+}

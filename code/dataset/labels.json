@@ -1,0 +1,38 @@
+{
+  "fs_hz": 50,
+  "samples_per_window": 100,
+  "n_classes": 10,
+  "labels": [
+    "standing",
+    "sitting",
+    "walking",
+    "running",
+    "jumping",
+    "stomp",
+    "shake_leg",
+    "soft_kick",
+    "hard_kick",
+    "repeated_kick"
+  ],
+  "trigger_labels": [
+    "repeated_kick"
+  ],
+  "rows_per_class": 100,
+  "total_rows": 1000,
+  "feature_names": [
+    "acc_mean_g",
+    "acc_std_g",
+    "acc_peak_g",
+    "acc_min_g",
+    "jerk_peak",
+    "jerk_mean",
+    "gyro_peak_dps",
+    "gyro_std_dps",
+    "ax_std",
+    "ay_std",
+    "az_std",
+    "gx_std",
+    "gy_std",
+    "gz_std"
+  ]
+}

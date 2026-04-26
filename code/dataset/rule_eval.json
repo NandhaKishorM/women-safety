@@ -1,0 +1,140 @@
+{
+  "accuracy": 0.52,
+  "trigger_precision": 1.0,
+  "trigger_recall": 1.0,
+  "trigger_f1": 1.0,
+  "confusion_matrix": {
+    "standing": {
+      "standing": 41,
+      "sitting": 59,
+      "walking": 0,
+      "running": 0,
+      "jumping": 0,
+      "stomp": 0,
+      "shake_leg": 0,
+      "soft_kick": 0,
+      "hard_kick": 0,
+      "repeated_kick": 0
+    },
+    "sitting": {
+      "standing": 89,
+      "sitting": 11,
+      "walking": 0,
+      "running": 0,
+      "jumping": 0,
+      "stomp": 0,
+      "shake_leg": 0,
+      "soft_kick": 0,
+      "hard_kick": 0,
+      "repeated_kick": 0
+    },
+    "walking": {
+      "standing": 0,
+      "sitting": 0,
+      "walking": 100,
+      "running": 0,
+      "jumping": 0,
+      "stomp": 0,
+      "shake_leg": 0,
+      "soft_kick": 0,
+      "hard_kick": 0,
+      "repeated_kick": 0
+    },
+    "running": {
+      "standing": 0,
+      "sitting": 0,
+      "walking": 0,
+      "running": 100,
+      "jumping": 0,
+      "stomp": 0,
+      "shake_leg": 0,
+      "soft_kick": 0,
+      "hard_kick": 0,
+      "repeated_kick": 0
+    },
+    "jumping": {
+      "standing": 0,
+      "sitting": 0,
+      "walking": 0,
+      "running": 0,
+      "jumping": 0,
+      "stomp": 0,
+      "shake_leg": 100,
+      "soft_kick": 0,
+      "hard_kick": 0,
+      "repeated_kick": 0
+    },
+    "stomp": {
+      "standing": 0,
+      "sitting": 0,
+      "walking": 25,
+      "running": 0,
+      "jumping": 75,
+      "stomp": 0,
+      "shake_leg": 0,
+      "soft_kick": 0,
+      "hard_kick": 0,
+      "repeated_kick": 0
+    },
+    "shake_leg": {
+      "standing": 0,
+      "sitting": 0,
+      "walking": 62,
+      "running": 0,
+      "jumping": 0,
+      "stomp": 0,
+      "shake_leg": 38,
+      "soft_kick": 0,
+      "hard_kick": 0,
+      "repeated_kick": 0
+    },
+    "soft_kick": {
+      "standing": 0,
+      "sitting": 0,
+      "walking": 0,
+      "running": 0,
+      "jumping": 0,
+      "stomp": 51,
+      "shake_leg": 0,
+      "soft_kick": 45,
+      "hard_kick": 4,
+      "repeated_kick": 0
+    },
+    "hard_kick": {
+      "standing": 0,
+      "sitting": 0,
+      "walking": 15,
+      "running": 0,
+      "jumping": 0,
+      "stomp": 0,
+      "shake_leg": 0,
+      "soft_kick": 0,
+      "hard_kick": 85,
+      "repeated_kick": 0
+    },
+    "repeated_kick": {
+      "standing": 0,
+      "sitting": 0,
+      "walking": 0,
+      "running": 0,
+      "jumping": 0,
+      "stomp": 0,
+      "shake_leg": 0,
+      "soft_kick": 0,
+      "hard_kick": 0,
+      "repeated_kick": 100
+    }
+  },
+  "labels": [
+    "standing",
+    "sitting",
+    "walking",
+    "running",
+    "jumping",
+    "stomp",
+    "shake_leg",
+    "soft_kick",
+    "hard_kick",
+    "repeated_kick"
+  ]
+}
