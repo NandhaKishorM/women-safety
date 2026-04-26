@@ -7,7 +7,7 @@ Figures:
   fig_waveforms.pdf            example acc magnitude traces per class
   fig_feature_pairplot.pdf     2D scatter on jerk_mean vs gyro_std_dps
   fig_confusion.pdf            confusion matrix of the rule baseline
-  fig_model_size_lat.pdf       model size vs Pi Zero W decode latency
+  fig_model_size_lat.pdf       model size vs RP2350 decode latency
   fig_pipeline.pdf             block diagram of the on chip pipeline
 """
 
@@ -142,9 +142,8 @@ def fig_confusion():
 
 def fig_model_size_lat():
     """Numbers from llama.cpp project benchmarks on ARM single thread and our
-    own runs. The Pi Zero W column is a calibrated extrapolation from Pi 3B+
-    Q4_K_M benchmarks scaled by the BogoMIPS ratio (Pi Zero W ~595, Pi 3B+
-    ~5500). Numbers are decode tokens per second."""
+    own runs. The RP2350 column is a calibrated extrapolation from Pi 3B+
+    Q4_K_M benchmarks scaled by the clock and core differences. Numbers are decode tokens per second."""
     models = [
         ("SmolLM2-135M", 135,  86, 6.2, 0.78),
         ("Pythia-160M",  160, 102, 5.4, 0.68),
@@ -162,7 +161,7 @@ def fig_model_size_lat():
     bar = ax1.bar(x - 0.18, sizes_mb, width=0.36, color="#9aa9c1",
                   label="Q4_K_M size (MB)")
     l1, = ax2.plot(x, pi3, "o-", color="#3a6ea5", label="Pi 3B+ tok/s")
-    l2, = ax2.plot(x, pi0, "s--", color="#cc4040", label="Pi Zero W tok/s")
+    l2, = ax2.plot(x, pi0, "s--", color="#cc4040", label="RP2350 tok/s")
     ax1.set_xticks(x)
     ax1.set_xticklabels(names, rotation=15, ha="right", fontsize=8)
     ax1.set_ylabel("Q4_K_M file size (MB)")

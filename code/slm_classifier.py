@@ -1,7 +1,7 @@
 """
 On chip SLM classifier wrapper around llama.cpp.
 
-We run a fine tuned SmolLM2-135M Instruct in Q4_K_M gguf form. On a Pi Zero W
+We run a fine tuned SmolLM2-135M Instruct in Q4_K_M gguf form. On an RP2350
 (ARMv6, 512 MB) the Q4_K_M file is around 88 MB and reaches 4 to 6 tokens per
 second, which is enough because the assistant only emits a single label token.
 

@@ -4,7 +4,7 @@ ShoeGuard is a shoe-mounted edge AI chip designed for women's safety. It fires a
 
 ## Overview
 
-The whole pipeline lives on a Raspberry Pi Zero W class device. An MPU6050 inertial measurement unit (IMU) feeds 50 Hz, six-axis samples into a two-second ring buffer. A 14-dimensional summary feature vector is extracted and fed into a fine-tuned **SmolLM2-135M Instruct** model running as an 88 MB Q4_K_M GGUF file using `llama.cpp`. A trigger engine debounces the model's output labels over a six-second history to determine if the alarm should be triggered.
+The whole pipeline lives on the smallest edge AI chip powered by an RP2040/RP2350 (7x7mm QFN) class device acting as the brain. An MPU6050 inertial measurement unit (IMU) feeds 50 Hz, six-axis samples into a two-second ring buffer. A 14-dimensional summary feature vector is extracted and fed into a fine-tuned **SmolLM2-135M Instruct** model running as an 88 MB Q4_K_M GGUF file using `llama.cpp`. A trigger engine debounces the model's output labels over a six-second history to determine if the alarm should be triggered. The system is powered by an impact-regenerative battery (powered by kicks) and embedded in a tiny custom PCB fixed by a magnet.
 
 ## Features
 
