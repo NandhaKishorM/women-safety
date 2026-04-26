@@ -26,7 +26,7 @@ The whole pipeline lives on the smallest edge AI chip powered by an RP2040/RP235
 
 - Nandakishor M
 - Sruthi K
-- Nisha Anish
+- Nisha M
 - Rajitna
 
 *Convai Innovations Research Lab*
